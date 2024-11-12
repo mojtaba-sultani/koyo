@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    input[type="number"] {
+        -moz-appearance: textfield;
+}
+.min-content{
+    min-height: 80vh;
+}
+}
+.dot-position{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+.size-input{
+    width:70px;
+    height:70px;
+    border-radius:40%;
+}
+.dot-position-home{
+    display: flex;
+    position: absolute;
+    bottom:-2px;
+    left: 40%;
+}
+.dot-position-about{
+    display: flex;
+    position: absolute;
+    bottom:0px;
+    left: 40%;
+
+}
+.bg-icon{
+    background-color: #f2f3f5;
+}
+p{
+    text-align: justify !important;
+    font-size: 14px;
+}
+.scroll{
+    overflow-x: auto;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+.me-6{
+    margin-right:6rem;
+}
+ input.file[type="file"] {
+    outline: none;
+    padding: 4px;
+    margin: -4px;
+  }
+  
+  input.file[type="file"]:focus-within::file-selector-button,
+  input.file[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  input.file[type="file"]::before {
+    top: 16px;
+  }
+  
+  input.file[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input.file[type="file"] {
+    position: relative;
+  }
+  
+  input.file[type="file"]::file-selector-button {
+    width: 200px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input.file[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+      top: 17px;
+    right: 60px;
+    color: #0964b0;
+    content: "انتخاب فایل ضمینه";
+  }
+  
+  input.file[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+      top:17px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input.file[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input.file[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input.file[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+
+   input.file[type="file"] {
+    outline: none;
+    padding: 4px;
+    margin: -4px;
+  }
+  
+  input.file[type="file"]:focus-within::file-selector-button,
+  input.file[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  input.file[type="file"]::before {
+    top: 16px;
+  }
+  
+  input.file[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input.file[type="file"] {
+    position: relative;
+  }
+  
+  input.file[type="file"]::file-selector-button {
+    width: 200px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input.file[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+      top: 17px;
+    right: 60px;
+    color: #0964b0;
+    content: "انتخاب فایل ضمینه";
+  }
+  
+  input.file[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+      top:17px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input.file[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input.file[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input.file[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+
+
+
+
+  input.file-2[type="file"] {
+    outline: none;
+    padding: 4px;
+    margin: -4px;
+  }
+  
+  input.file-2[type="file"]:focus-within::file-selector-button,
+  input.file-2[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset:2px;
+  }
+  
+  input.file-2[type="file"]::before {
+    top: 16px;
+  }
+  
+  input.file-2[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input.file-2[type="file"] {
+    position: relative;
+  }
+  
+  input.file-2[type="file"]::file-selector-button {
+    width: 100px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input.file-2[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+      top: 17px;
+    right: 60px;
+    color: #0964b0;
+    content: "فایل";
+  }
+  
+  input.file-2[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+      top:17px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input.file-2[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input.file-2[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input.file-2[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+
+   input.file-2[type="file"] {
+    outline: none;
+    padding: 4px;
+    margin: -4px;
+  }
+  
+  input.file-2[type="file"]:focus-within::file-selector-button,
+  input.file-2[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  input.file-2[type="file"]::before {
+    top: 16px;
+  }
+  
+  input.file-2[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input.file-2[type="file"] {
+    position: relative;
+  }
+  
+  input.file-2[type="file"]::file-selector-button {
+    width: 100px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input.file-2[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+      top: 17px;
+    right:60px;
+    color: #0964b0;
+    content: "فایل ";
+  }
+  
+  input.file-2[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+      top:17px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input.file-2[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input.file-2[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input.file-2[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
