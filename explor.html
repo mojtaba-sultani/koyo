@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اکسپلور - کوپو</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class=" bg-white">
+        <div class=" mx-auto mx-md-0 bg-white">
+            <div class=" d-flex  justify-content-center align-items-center">
+                <div class=" d-flex  align-items-end mt-4 me-auto ms-5">
+                    <img src="./images/Vector.svg" alt="آیکون کوپو" class="img-fluid ms-1 me-2" width="25">
+                    <img src="./images/Vector (1).svg" alt="حرف کو از لوگوی کوپو" class="img-fluid" width="35">
+                    <div class="position-relative d-flex">
+                        <img src="./images/Vector (2).svg" alt="حرف پو از لوگوی کوپو" class="img-fluid" width="30">
+                        <div class="dot-position-home">
+                            <img src="./images/Vector (3).svg" alt="" class="img-fluid" width="5">
+                            <img src="./images/Vector (3).svg" alt="" class="img-fluid" width="5">
+                            <img src="./images/Vector (3).svg" alt="" class="img-fluid" width="5">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex mt-4 ms-auto me-6">
+                    <a href="./Notifications.html" class="border-0 position-relative p-2">
+                        <img src="./images/notifications.svg" alt="" class="img-fluid" width="20">
+                        <span class="position-absolute top-0 start-50  badge rounded-pill text-bg-warning">
+                            6
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <nav class="navbar text-secondary mt-3 scroll">
+                <div class="mx-auto">
+                    <div class="col-12  w-100 p-0">
+                        <ul class="d-flex  mt-3 list-unstyled justify-content-center text-nowrap scroll">
+                            <li class="nav-item d-flex flex-column align-items-center">
+                                <img src="./images/My centers.png" alt="" width="55" class="p-3 rounded-4 bg-icon">
+                                <a href="./mycenters.html" class="nav-link mt-2" style="font-size: 14px;">مراکز من</a>
+                            </li>
+                            <li class="nav-item d-flex flex-column align-items-center">
+                                <img src="./images/Coupons.png" alt="" width="52" class="p-3 rounded-4 bg-icon">
+                                <a href="./copens.html" class="nav-link mt-2" style="font-size: 14px;">کوپن ها</a>
+                            </li>
+                            <li class="nav-item d-flex flex-column align-items-center me-1">
+                                <img src="./images/explor-black.png" alt="" width="55" class="p-3 rounded-4 bg-icon bg-warning">
+                                <a href="./explor.html" class="nav-link mt-2" style="font-size: 14px;">اکسپلور</a>
+                            </li>
+                            <li class="nav-item d-flex flex-column align-items-center">
+                                <img src="./images/Profile-3.png" alt="" width="50"
+                                    class="p-3 rounded-4 bg-icon">
+                                <a href="./meProfie.html" class="nav-link mt-2 text-nowrap"
+                                    style="font-size: 14px;">پروفایل من</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto p-3">
+                <div class="row">
+                    <div class="col-6 ps-0">
+                        <select id="mySelect" class="fw-bold w-100 form-control ms-auto">
+                            <option value="2">مشهد</option>
+                            <option value="1">تهران</option>
+                            <option value="3">اصفهان</option>
+                            <option value="4">شیراز</option>
+                            <option value="5">تبریز</option>
+                            <option value="6">قم</option>
+                            <option value="7">کرج</option>
+                            <option value="8">اهواز</option>
+                            <option value="9">رشت</option>
+                            <option value="10">آبادان</option>
+                            <option value="11">ساری</option>
+                            <option value="12">زنجان</option>
+                            <option value="13">ارومیه</option>
+                            <option value="14">کرمان</option>
+                            <option value="15">یزد</option>
+                            <option value="16">اراک</option>
+                            <option value="17">بوشهر</option>
+                            <option value="18">قزوین</option>
+                            <option value="19">ایلام</option>
+                            <option value="20">بندرعباس</option>
+                            <option value="21">خرم‌آباد</option>
+                            <option value="22">اردبیل</option>
+                            <option value="23">کاشان</option>
+                            <option value="24">خرم‌آباد</option>
+                            <option value="25">کاشمر</option>
+                            <option value="26">بیرجند</option>
+                            <option value="27">سمنان</option>
+                            <option value="28">سقفیه</option>
+                            <option value="29">دامغان</option>
+                            <option value="30">مشهد</option>
+                            <option value="31">قزوین</option>
+                        </select>
+                    </div>
+                    <div class="col-6 pe-2">
+                        <select id="mySelect1" class="w-100 form-control ms-auto">
+                            <option value="2">لباس</option>
+                            <option value="1">عطر</option>
+                            <option value="3">مارکت</option>
+                            <option value="4">اکسسوری</option>
+                            <option value="5">بازی</option>
+                            <option value="6">تفریحی</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="nav-link p-0 my-3">
+                    <div class="d-flex bg-white p-3 rounded-4 align-items-center">
+                        <div class="bg-green p-3 rounded-4">
+                            <img src="./images/icon-brand.png" alt="" width="30">
+                        </div>
+                        <div class="d-flex flex-column text-end me-2">
+                            <b>عطر زندی</b>
+                            <span style="font-size: 14px;" class="text-secondary">مشهد,احمدآباد</span>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#" class="nav-link p-0 my-3">
+                    <div class="d-flex bg-white p-3 rounded-4 align-items-center">
+                        <div class="bg-green  p-3 rounded-4">
+                            <img src="./images/icon-brand.png" alt="" width="30">
+                        </div>
+                        <div class="d-flex flex-column text-end me-2">
+                            <b>فکر خوب</b>
+                            <span style="font-size: 14px;" class="text-secondary">مشهد,احمدآباد</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="./script.js"></script>
+<script>
+$(document).ready(function() {
+    $('#mySelect').select2({
+        placeholder: "مشهد...",
+        width: '100%',   
+    });
+});
+$(document).ready(function() {
+    $('#mySelect1').select2({
+        placeholder: "مشهد...",
+        width: '100%',    
+    });
+});
+</script>
+</body>
+
+</html>
