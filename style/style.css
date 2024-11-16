@@ -25,7 +25,9 @@ input[type="number"]::placeholder {
 .min-content{
     min-height: 100vh;
 }
-
+header{
+  overflow-y: hidden !important;
+}
 .dot-position{
     display: flex;
     position: absolute;
@@ -58,8 +60,7 @@ p{
     font-size: 14px;
 }
 .scroll{
-    overflow-x: auto;
-	overflow-y: hidden;
+    overflow-x: auto !important;
 }
 .scroll::-webkit-scrollbar{
     display: none;
@@ -108,79 +109,54 @@ p{
 .custom-file-input1:focus + .custom-file-label {
   outline: none;
 }
-nav li:hover > img{
-  transition: filter 0.3s ease;}
 
- nav li:hover > img{
-  background-color: #ffc107 !important;
+.select2-selection.select2-selection--single{
+  display: flex;
 }
-
-.select2-container .select2-selection--single{
-  height:50px;
+.select2-container .select2-selection__arrow b{
+  display: none;
 }
-
-.select2-container--default .select2-selection--single {
-  padding: 10px; 
-  /* border-radius:1rem !important;  */
-  border-end-start-radius: 1rem;
-  border: 0 !important;
-
+/* حذف فلش پیش‌فرض */
+#mySelect + .select2-container .select2-selection__arrow {
+  background: url('../images/Arrow.png') no-repeat center center;
+  background-size:contain;
+  top: 15px !important;
+  left: 10px !important;
+  width: 10px !important; 
+  height:10px !important;
+  border: none;
+  z-index: 9999;
 }
-
-.select2-container--default .select2-selection__rendered {
-  text-align: end !important;
-  color: #333; 
-  display: flex !important;
+#mySelect1 + .select2-container .select2-selection__arrow {
+  background: url('../images/list.svg') no-repeat center center;
+  background-size:contain;
+  top: 15px !important;
+  left: 10px !important;
+  width: 10px !important;  
+  height:10px !important; 
+  border: none;
+  z-index: 9999;
 }
-
-
-.select2-container--default .select2-results {
-  padding: 5px;
-  background-color: #ffffff; 
+.select2-dropdown{
+  border: none !important;
+  padding: 0 10px;
 }
-
-.select2-container--default .select2-selection__arrow {
-  padding: 5px;
-  background-color: transparent;
-}
-/* حذف آیکون پیش‌فرض از هر دو Select2 */
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-display: none;
-}
-/* افزودن آیکون جدید به جای مثلث (برای select2-1) */
-.mySelect .select2-container--default .select2-selection--single .select2-selection__arrow {
-  background-image: url('../images/Arrow.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 20px;  /* ارتفاع آیکون */
-  width: 20px;   /* عرض آیکون */
-}
-
-
-.select2-dropdown.select2-dropdown--below{
-  width: 100 !important;
-  border: 0 !important;
-}
-.select2-search__field{ 
-  border-radius: 1rem !important;
-  padding: 10px !important;
-  border: 0 !important;
+.select2-search--dropdown .select2-search__field{
+  border: none !important;
   background-color: #F2F3F5;
+  border-radius:10px;
 }
-.select2-search--dropdown {
-    background-color: white;
-    /* border: 1px solid #ddd; */
-    border-radius: 5px;
-    padding:5px 15px;
-}
-
-
-.select2-container--default .select2-selection--single .select2-selection__arrow{
-  height:48px;
-}
-.select2-results__option{
+.select2-results__options{
   text-align: justify;
 }
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+ border: none !important;
+  border-radius:10px;
+  height: 40px;
+  padding: 8px;
+}
+
 .bg-green{
   background-color:#6ECBC0;
 }
@@ -371,4 +347,12 @@ input[type="range"]:disabled::-moz-range-thumb {
 }
 .select2.select2-container.select2-container--default{
 	font-weight: bold !important;
+}
+/* استایل برای حالت فعال */
+.nav-item.active .icon {
+  background-color: #ffc107; /* تغییر پس‌زمینه به رنگ هشدار */
+}
+
+.nav-item.active img {
+  filter: grayscale(100%) brightness(0); /* تغییر رنگ آیکون به مشکی */
 }

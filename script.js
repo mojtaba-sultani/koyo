@@ -1,12 +1,30 @@
-document.getElementById('custom-file').addEventListener('change', function(event) {
-    const fileName = event.target.files[0] ? event.target.files[0].name : 'انتخاب فایل';
-    document.querySelector('.custom-file-label').textContent = fileName;
-  });
-  document.getElementById('custom-file1').addEventListener('change', function(event) {
-    const fileName = event.target.files[0] ? event.target.files[0].name : 'انتخاب فایل';
-    document.querySelector('.custom-file-label1').textContent = fileName;
-  });
   function updateOutput(input, outputId) {
     const output = document.getElementById(outputId);
     output.value = input.value;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const navLinks = document.querySelectorAll('.nav-item');
+  const divs = document.querySelectorAll("nav li div"); // انتخاب تمام div ها
+  const currentPath = window.location.pathname.split('/').pop();
+  
+  navLinks.forEach(function(navLink) {
+    const link = navLink.querySelector('a');
+    const linkPath = link.getAttribute('href').split('/').pop();
+    
+    divs.forEach((item) => {
+      item.classList.remove("bg-warning");
+    });
+
+    if (linkPath === currentPath) {
+      navLink.classList.add('active');
+      const div = navLink.querySelector('div');
+      if (div) {
+        div.classList.add('bg-warning');
+      }
+    } else {
+      navLink.classList.remove('active');
+    }
+  });
+});
