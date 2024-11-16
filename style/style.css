@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
@@ -11,10 +12,20 @@
     input[type="number"] {
         -moz-appearance: textfield;
 }
+/* تغییر رنگ placeholder */
+input[type="number"]::placeholder {
+	color: gray;  /* رنگ placeholder */
+	font-weight: normal;
+  }
+  
+  /* تغییر رنگ متن واقعی وارد شده */
+  input[type="number"] {
+	color: black;  /* رنگ متن وارد شده */
+  }
 .min-content{
-    min-height: 80vh;
+    min-height: 100vh;
 }
-}
+
 .dot-position{
     display: flex;
     position: absolute;
@@ -48,6 +59,7 @@ p{
 }
 .scroll{
     overflow-x: auto;
+	overflow-y: hidden;
 }
 .scroll::-webkit-scrollbar{
     display: none;
@@ -103,15 +115,14 @@ nav li:hover > img{
   background-color: #ffc107 !important;
 }
 
-
 .select2-container .select2-selection--single{
   height:50px;
 }
 
 .select2-container--default .select2-selection--single {
-  
   padding: 10px; 
-  border-radius:1rem !important; 
+  /* border-radius:1rem !important;  */
+  border-end-start-radius: 1rem;
   border: 0 !important;
 
 }
@@ -130,19 +141,39 @@ nav li:hover > img{
 
 .select2-container--default .select2-selection__arrow {
   padding: 5px;
-  background-color: #fafafa;
+  background-color: transparent;
 }
+/* حذف آیکون پیش‌فرض از هر دو Select2 */
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+display: none;
+}
+/* افزودن آیکون جدید به جای مثلث (برای select2-1) */
+.mySelect .select2-container--default .select2-selection--single .select2-selection__arrow {
+  background-image: url('../images/Arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;  /* ارتفاع آیکون */
+  width: 20px;   /* عرض آیکون */
+}
+
+
 .select2-dropdown.select2-dropdown--below{
   width: 100 !important;
   border: 0 !important;
 }
 .select2-search__field{ 
-  margin-top: 10px;
   border-radius: 1rem !important;
   padding: 10px !important;
   border: 0 !important;
-  background-color: #ced4da;
+  background-color: #F2F3F5;
 }
+.select2-search--dropdown {
+    background-color: white;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding:5px 15px;
+}
+
 
 .select2-container--default .select2-selection--single .select2-selection__arrow{
   height:48px;
@@ -193,25 +224,6 @@ input[type="range"].win10-thumb {
 	--thumb-height: 1.375em;
 	--thumb-width: 0.5em;
 	--clip-edges: 0.0125em;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		background-color: #000;
-	}
-
-	html::before {
-		background: radial-gradient(circle at center, #101112, #000);
-	}
-
-	input[type="range"] {
-		color: #ffc107;
-		--track-color: rgba(255, 255, 255, 0.1);
-	}
-
-	input[type="range"].win10-thumb {
-		color: #3a86ff;
-	}
 }
 
 /* === range commons === */
