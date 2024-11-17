@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ارسال تیکت جدید - کوپو</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css" rel="stylesheet">
@@ -40,26 +40,26 @@
                 <div class="mx-auto">
                     <div class="col-12 mx-auto w-100 p-0">
                         <ul class="d-flex  mt-3 list-unstyled justify-content-center text-nowrap scroll">
-                            <li class="nav-item d-flex flex-column align-items-center  ms-3">
+                            <li class="nav-item d-flex flex-column align-items-center ms-4">
                                 <div class="rounded-3 p-3 bg-icon">
                                     <img src="./images/myCenters.svg" alt="" width="28">
                                 </div>
                                 
                                 <a href="./mycenters.html" class="nav-link mt-2" style="font-size: 14px;">مراکز من</a>
                             </li>
-                            <li class="nav-item d-flex flex-column align-items-center ms-3">
+                            <li class="nav-item d-flex flex-column align-items-center ms-4">
                                 <div class=" rounded-3 bg-icon p-3">
                                     <img src="./images/conpens.svg" alt="آیکون کوپن ها" width="25">
                                 </div>
                                 <a href="./copens.html" class="nav-link mt-2" style="font-size: 14px;" onclick="addblackfilter(event)">کوپن ها</a>
                             </li>
-                            <li class="nav-item d-flex flex-column align-items-center ms-2">
+                            <li class="nav-item d-flex flex-column align-items-center ms-4">
                                 <div class="rounded-3 p-3 bg-icon">
                                     <img src="./images/explor.svg" alt="آیکون اکسپلور" width="28">
                                 </div>
                                 <a href="./explor.html" class="nav-link mt-2" style="font-size: 14px;">اکسپلور</a>
                             </li>
-                            <li class="nav-item d-flex flex-column align-items-center ms-3">
+                            <li class="nav-item d-flex flex-column align-items-center me-1">
                                 <div class="bg-icon rounded-3 p-3">
                                     <img src="./images/Profile-3.svg" alt="آیکون پروفایل من" width="21">
                                 </div>
@@ -103,15 +103,13 @@
             </div>
         </div>
     </section>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script/script.js"></script>
     <script>
         $(document).ready(function() {
     $('#mySelect2').select2({
-        // placeholder: "مشهد...",
         width: '100%',    
     });
 });
