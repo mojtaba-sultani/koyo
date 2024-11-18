@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const link = navLink.querySelector('a');
     const linkPath = link.getAttribute('href').split('/').pop();
     
-    divs.forEach((item) => {
-      item.classList.remove("bg-warning");
-    });
-
     if (linkPath === currentPath) {
       navLink.classList.add('active');
       const div = navLink.querySelector('div');
