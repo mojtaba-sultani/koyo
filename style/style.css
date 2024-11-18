@@ -112,6 +112,7 @@ p{
 
 .select2-selection.select2-selection--single{
   display: flex;
+  align-items: center;
 }
 .select2-container .select2-selection__arrow b{
   display: none;
@@ -120,17 +121,18 @@ p{
 #mySelect + .select2-container .select2-selection__arrow {
   background: url('../images/Arrow.png') no-repeat center center;
   background-size:contain;
-  top: 15px !important;
+  top: 20px !important;
   left: 10px !important;
   width: 10px !important; 
   height:10px !important;
   border: none;
   z-index: 9999;
 }
+
 #mySelect1 + .select2-container .select2-selection__arrow {
   background: url('../images/list.svg') no-repeat center center;
   background-size:contain;
-  top: 15px !important;
+  top: 20px !important;
   left: 10px !important;
   width: 10px !important;  
   height:10px !important; 
@@ -398,4 +400,7 @@ input[type="range"]:disabled::-moz-range-thumb {
 }
 .fs-7{
   font-size: 14px;
+}
+.rounded-20{
+  border-radius: 20px;
 }
