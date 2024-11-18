@@ -23,7 +23,7 @@ input[type="number"]::placeholder {
 	color: black;  /* رنگ متن وارد شده */
   }
 .min-content{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 header{
   overflow-y: hidden !important;
@@ -137,6 +137,23 @@ p{
   border: none;
   z-index: 9999;
 }
+#mySelect2 + .select2-container .select2-selection__arrow {
+  background: url('../images/ArrowSecondary.svg') no-repeat center center;
+  background-size:contain;
+  top: 20px !important;
+  left: 10px !important;
+  width: 10px !important; 
+  height:10px !important;
+  border: none;
+  z-index: 9999;
+}
+.select2-container--default .select2-results__option--highlighted{
+  background-color: transparent !important;
+  color: #ffc107 !important;
+}
+.select2-container--default .select2-results__option{
+  background-color: transparent !important;
+}
 .select2-dropdown{
   border: none !important;
   padding: 0 10px;
@@ -153,7 +170,7 @@ p{
   background-color: #fff;
  border: none !important;
   border-radius:10px;
-  height: 40px;
+  height: 50px;
   padding: 8px;
 }
 
@@ -348,6 +365,29 @@ input[type="range"]:disabled::-moz-range-thumb {
 .select2.select2-container.select2-container--default{
 	font-weight: bold !important;
 }
+#mySelect2 + .select2.select2-container.select2-container--default{
+  color: #888 !important;
+  font-weight: normal !important;
+}
+/* برای مخفی کردن نوار اسکرول فقط در کشوی Select2 */
+.select2-container .select2-dropdown {
+  scrollbar-width: thin; /* برای فایرفاکس */
+  scrollbar-color: transparent transparent; /* برای فایرفاکس */
+}
+
+.select2-container .select2-dropdown::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.select2-container .select2-dropdown::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.select2-container .select2-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 /* استایل برای حالت فعال */
 .nav-item.active .icon {
   background-color: #ffc107; /* تغییر پس‌زمینه به رنگ هشدار */
@@ -355,4 +395,7 @@ input[type="range"]:disabled::-moz-range-thumb {
 
 .nav-item.active img {
   filter: grayscale(100%) brightness(0); /* تغییر رنگ آیکون به مشکی */
+}
+.fs-7{
+  font-size: 14px;
 }

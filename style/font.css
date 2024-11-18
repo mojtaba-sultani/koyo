@@ -1,11 +1,10 @@
 @font-face {
     font-family: "ravi";
-    src: url('../font/Ravi-Medium.woff2');
-    src: url('../font/Ravi-Light.woff2');
-    src: url('../font/Ravi-Regular.woff2');
+    src: url('../font/RaviFaNum-Regular.woff');
 }
 
 body{
     font-family: "ravi";
     background-color: #F2F3F5;
+    font-feature-settings: "numr" 1;
 }
