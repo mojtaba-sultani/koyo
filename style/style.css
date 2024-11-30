@@ -404,3 +404,6 @@ input[type="range"]:disabled::-moz-range-thumb {
 .rounded-20{
   border-radius: 20px;
 }
+.form-ltr{
+  direction: ltr;
+}
